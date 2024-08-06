@@ -96,7 +96,7 @@ while True:
         if e.type==pygame.QUIT:
             pygame.quit()
             sys.exit()
-        if e.type==pygame.MOUSEBUTTONDOWN:
+        if e.type==pygame.MOUSEBUTTONDOWN and not shot:
             m1=True
             shot=True
             shot_ang=t_ang
